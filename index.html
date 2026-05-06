@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#002d62">
+  <title>Pronovean — Your Digital Growth Partner</title>
+  <meta name="description" content="Pronovean helps organisations build, buy and implement the right digital solutions. Digital transformation, web & app development, and fractional management services.">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <!-- Canonical / site URL — replace once production domain is finalized -->
+  <link rel="canonical" href="https://pronovean.com/">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, iMessage, Slack, Discord, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pronovean">
+  <meta property="og:url" content="https://pronovean.com/">
+  <meta property="og:title" content="Pronovean — Your Digital Growth Partner">
+  <meta property="og:description" content="Pronovean helps organisations build, buy and implement the right digital solutions. Digital transformation, web & app development, and fractional management services.">
+  <meta property="og:image" content="https://pronovean.com/assets/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://pronovean.com/assets/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="600">
+  <meta property="og:image:alt" content="Pronovean — Your Digital Growth Partner">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@pronovean_inc">
+  <meta name="twitter:title" content="Pronovean — Your Digital Growth Partner">
+  <meta name="twitter:description" content="Pronovean helps organisations build, buy and implement the right digital solutions. Digital transformation, web & app development, and fractional management services.">
+  <meta name="twitter:image" content="https://pronovean.com/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="Pronovean — Your Digital Growth Partner">
+
+  <!-- Fonts: Bebas Neue (display, free Google equivalent of Bebas Kai) + Roboto (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Pronovean home">
+        <img src="assets/logo-white.png" alt="Pronovean" width="276">
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#what-we-do">What We Do</a>
+        <a href="#why">Why Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="https://calendar.app.google/gA78eskNmeD4hZSR8" target="_blank" rel="noopener" class="btn btn--primary nav__cta">Book a Call</a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#what-we-do">What We Do</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#partners">Partners</a>
+      <a href="#contact">Contact</a>
+      <a href="https://calendar.app.google/gA78eskNmeD4hZSR8" target="_blank" rel="noopener" class="btn btn--primary">Book a Call</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO (4 scroll-snap panels) ============ -->
+    <section class="hero" aria-label="Hero">
+      <!-- Fixed background atmosphere shared across panels -->
+      <div class="hero__atmosphere" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+
+      <!-- Progress rail -->
+      <div class="hero__rail" aria-hidden="true">
+        <div class="hero__rail-track"><div class="hero__rail-fill" id="heroRailFill"></div></div>
+        <div class="hero__rail-count"><span id="heroRailNum">01</span> / 04</div>
+      </div>
+
+      <div class="hero__panels" id="heroPanels">
+
+        <article class="hero__panel" data-slide="1">
+          <div class="hero__content">
+            <span class="eyebrow">Digital Growth</span>
+            <h1 class="hero__title">Your Digital<br>Growth Partner</h1>
+            <p class="hero__sub">Empowering businesses to streamline operations, boost efficiency, and drive profitability through strategic digital solutions.</p>
+            <div class="hero__ctas">
+              <a href="#contact" class="btn btn--primary">Book Free Consultation</a>
+              <a href="#what-we-do" class="link-arrow">Learn More <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="growth-net">
+              <svg class="growth-net__lines" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gn-grad" x1="0" x2="1" y1="0" y2="1">
+                    <stop offset="0" stop-color="#4e81fa" stop-opacity=".7"/>
+                    <stop offset="1" stop-color="#247B7B" stop-opacity=".55"/>
+                  </linearGradient>
+                </defs>
+                <path d="M200 200 L72 90"  class="growth-net__line" />
+                <path d="M200 200 L328 90" class="growth-net__line" />
+                <path d="M200 200 L72 310" class="growth-net__line" />
+                <path d="M200 200 L328 310" class="growth-net__line" />
+                <path d="M40 360 C 110 260, 200 240, 380 60" class="growth-net__chartline" />
+              </svg>
+              <span class="growth-net__hub">
+                <span class="growth-net__hub-pulse"></span>
+              </span>
+              <span class="growth-net__sat growth-net__sat--1"><span class="growth-net__sat-dot"></span>Web</span>
+              <span class="growth-net__sat growth-net__sat--2"><span class="growth-net__sat-dot"></span>CRM</span>
+              <span class="growth-net__sat growth-net__sat--3"><span class="growth-net__sat-dot"></span>Data</span>
+              <span class="growth-net__sat growth-net__sat--4"><span class="growth-net__sat-dot"></span>Auto</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero__panel" data-slide="2">
+          <div class="hero__content">
+            <span class="eyebrow">Web &amp; App</span>
+            <h1 class="hero__title">Launch Fast.<br>Scale Smarter.</h1>
+            <p class="hero__sub">We design and build websites and mobile apps using low-code, no-code, and custom development—fast, cost-effective, and built to grow.</p>
+            <div class="hero__ctas">
+              <a href="#what-we-do" class="btn btn--primary">See Web &amp; App Solutions</a>
+              <a href="#contact" class="link-arrow">Start a project <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="device-stack">
+              <span class="device-stack__streak"></span>
+              <div class="device device--desktop">
+                <span class="device__bar"></span>
+                <span class="device__row"></span>
+                <span class="device__row device__row--alt"></span>
+                <span class="device__row"></span>
+                <span class="device__chip"></span>
+              </div>
+              <div class="device device--tablet">
+                <span class="device__bar"></span>
+                <span class="device__row"></span>
+                <span class="device__row device__row--alt"></span>
+              </div>
+              <div class="device device--mobile">
+                <span class="device__bar"></span>
+                <span class="device__dot"></span>
+                <span class="device__row"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero__panel" data-slide="3">
+          <div class="hero__content">
+            <span class="eyebrow">Capsule CRM</span>
+            <h1 class="hero__title">Organize, Automate,<br>Grow with Capsule.</h1>
+            <p class="hero__sub">As approved Capsule Solution Partners, we help you streamline customer management and drive more meaningful engagement.</p>
+            <div class="hero__ctas">
+              <a href="#contact" class="btn btn--primary">Learn About Capsule Integration</a>
+              <a href="#why" class="link-arrow">Why partner with us <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="capsule-orbit">
+              <span class="capsule-orbit__ring capsule-orbit__ring--1"></span>
+              <span class="capsule-orbit__ring capsule-orbit__ring--2"></span>
+              <span class="capsule-orbit__core">
+                <span class="capsule-orbit__pill"></span>
+              </span>
+              <span class="capsule-orbit__card capsule-orbit__card--contact">
+                <span class="capsule-orbit__avatar"></span>
+                <span class="capsule-orbit__lines"><i></i><i></i></span>
+              </span>
+              <span class="capsule-orbit__card capsule-orbit__card--deal">
+                <span class="capsule-orbit__stage">
+                  <i class="is-active"></i><i class="is-active"></i><i></i>
+                </span>
+                <span class="capsule-orbit__amount"></span>
+              </span>
+              <span class="capsule-orbit__card capsule-orbit__card--task">
+                <span class="capsule-orbit__check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-11"/></svg>
+                </span>
+                <span class="capsule-orbit__lines"><i></i></span>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero__panel" data-slide="4">
+          <div class="hero__content">
+            <span class="eyebrow">Fractional Leadership</span>
+            <h1 class="hero__title">Product Leadership.<br>Without the Overhead.</h1>
+            <p class="hero__sub">Get expert product management support to kickstart new initiatives, revive stalled projects, or guide ongoing work—without hiring full-time.</p>
+            <div class="hero__ctas">
+              <a href="#contact" class="btn btn--primary">Explore On-Demand PM</a>
+              <a href="#what-we-do" class="link-arrow">All services <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="roadmap">
+              <span class="roadmap__track"></span>
+              <span class="roadmap__progress"></span>
+              <div class="roadmap__step roadmap__step--1">
+                <span class="roadmap__dot"></span>
+                <span class="roadmap__card">
+                  <small>Discover</small>
+                  <span class="roadmap__bar"></span>
+                </span>
+              </div>
+              <div class="roadmap__step roadmap__step--2 is-active">
+                <span class="roadmap__dot"></span>
+                <span class="roadmap__card">
+                  <small>Build</small>
+                  <span class="roadmap__bar"></span>
+                </span>
+              </div>
+              <div class="roadmap__step roadmap__step--3">
+                <span class="roadmap__dot"></span>
+                <span class="roadmap__card">
+                  <small>Launch</small>
+                  <span class="roadmap__bar"></span>
+                </span>
+              </div>
+              <span class="roadmap__compass" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="32" cy="32" r="26"/>
+                  <path d="M32 8 v8 M32 48 v8 M8 32 h8 M48 32 h8"/>
+                  <path d="M32 18 L40 32 L32 46 L24 32 Z" fill="currentColor" fill-opacity=".25"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <a href="#what-we-do" class="hero__scroll-hint" aria-label="Scroll down">
+        <span class="hero__scroll-line"></span>
+        Scroll
+      </a>
+    </section>
+
+    <!-- ============ WHAT WE DO ============ -->
+    <section class="section section--light" id="what-we-do">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow eyebrow--dark">What We Do</span>
+          <h2 class="section__title">We Help Organisations Build, Buy &amp; Implement the Right Digital Solutions.</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </div>
+            <h3>Digital Transformation</h3>
+            <p>Turn your business goals into real outcomes with the right roadmap, technologies, and hands-on implementation to help you scale with confidence.</p>
+            <a href="#contact" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 9l3 3-3 3M14 9l3 3-3 3"/></svg>
+            </div>
+            <h3>Web &amp; App Development</h3>
+            <p>From quick low-code/no-code builds to fully custom platforms, we design and develop digital experiences that perform, convert, and support your business goals.</p>
+            <a href="#contact" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Fractional Management</h3>
+            <p>Access product, marketing, and growth expertise without the full-time cost—strategy, positioning, validation, and execution to ensure every initiative drives adoption, revenue, and measurable impact.</p>
+            <a href="#contact" class="card__link">Learn more <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDIBILITY / CLIENT LOGOS ============ -->
+    <section class="section section--dark credibility">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Previous Roles Held by Our Leadership</span>
+          <h3 class="credibility__title">Top Brands Supported</h3>
+        </header>
+      </div>
+      <div class="marquee marquee--dark reveal" aria-label="Brands our leadership has worked with">
+        <div class="marquee__track">
+          <!-- Set 1 -->
+          <img src="assets/clients/logo_Air-Canada.png" alt="Air Canada">
+          <img src="assets/clients/logo_CIBC.png" alt="CIBC">
+          <img src="assets/clients/logo_Microsoft.png" alt="Microsoft">
+          <img src="assets/clients/logo_Toyota.png" alt="Toyota">
+          <img src="assets/clients/logo_Hyundai.gif" alt="Hyundai">
+          <img src="assets/clients/logo_Pepsi.png" alt="Pepsi">
+          <img src="assets/clients/logo_Gatorade.png" alt="Gatorade">
+          <img src="assets/clients/logo_KFC.png" alt="KFC">
+          <img src="assets/clients/logo_Dominos-Pizza.png" alt="Domino's Pizza">
+          <img src="assets/clients/logo_Pandora.png" alt="Pandora">
+          <img src="assets/clients/logo_Scotiabank.png" alt="Scotiabank">
+          <img src="assets/clients/logo_Western-Union.png" alt="Western Union">
+          <img src="assets/clients/logo_Digicel.png" alt="Digicel">
+          <img src="assets/clients/logo_Massy.png" alt="Massy">
+          <img src="assets/clients/logo_cemex.webp" alt="Cemex">
+          <img src="assets/clients/logo_EIA.png" alt="EIA">
+          <!-- Set 2 (duplicate for seamless loop) -->
+          <img src="assets/clients/logo_Air-Canada.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_CIBC.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Microsoft.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Toyota.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Hyundai.gif" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Pepsi.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Gatorade.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_KFC.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Dominos-Pizza.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Pandora.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Scotiabank.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Western-Union.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Digicel.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_Massy.png" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_cemex.webp" alt="" aria-hidden="true">
+          <img src="assets/clients/logo_EIA.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY PRONOVEAN ============ -->
+    <section class="section section--light" id="why">
+      <div class="container">
+        <div class="why">
+          <div class="why__intro reveal">
+            <span class="eyebrow eyebrow--dark">Why Pronovean?</span>
+            <h2 class="section__title">Clarity and confidence through every digital decision.</h2>
+            <p class="why__lede">Running a business today is challenging—shifting markets, too many tech choices, and rising customer expectations. We combine empathy and expertise to guide you through digital transformation with clarity and confidence.</p>
+          </div>
+
+          <ul class="why__list">
+            <li class="why__item reveal">
+              <h4>Human-Driven Approach</h4>
+              <p>We prioritize understanding your unique needs and challenges to deliver personalized solutions.</p>
+            </li>
+            <li class="why__item reveal">
+              <h4>Proven Track Record</h4>
+              <p>Years of experience helping businesses achieve their digital transformation goals successfully.</p>
+            </li>
+            <li class="why__item reveal">
+              <h4>Long-Term Partnership</h4>
+              <p>We're committed to your success beyond implementation with ongoing support and guidance.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="18">0</span><span class="stat__plus">+</span></div>
+            <div class="stat__label">Years founders delivering<br>digital transformation &amp; marketing</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="50">0</span><span class="stat__plus">+</span></div>
+            <div class="stat__label">Digital projects supported</div>
+          </div>
+          <div class="stat reveal">
+            <div class="stat__num"><span data-count="11">0</span></div>
+            <div class="stat__label">Countries served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEET OUR LEADERS ============ -->
+    <section class="section section--light leaders" id="leaders">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow eyebrow--dark">Meet Our Leaders</span>
+          <h2 class="section__title">Three complementary experts.<br>One shared mission.</h2>
+        </header>
+
+        <div class="leaders__grid">
+          <article class="leader reveal">
+            <div class="leader__photo-wrap">
+              <img src="assets/team/david-romeo.jpg" alt="David Romeo" loading="lazy">
+            </div>
+            <div class="leader__body">
+              <h3 class="leader__name">David Romeo</h3>
+              <p class="leader__role">Founder &amp; CEO</p>
+              <p class="leader__bio">David is a business strategy and product development professional with over 10 years of experience in management consulting. He has led digital transformation initiatives across Latin America, the Caribbean, and North America, and, since 2019, has overseen the development of web, mobile, and AI products.</p>
+            </div>
+          </article>
+
+          <article class="leader reveal">
+            <div class="leader__photo-wrap">
+              <img src="assets/team/justin-beausoleil.jpg" alt="Justin Beausoleil" loading="lazy">
+            </div>
+            <div class="leader__body">
+              <h3 class="leader__name">Justin Beausoleil</h3>
+              <p class="leader__role">Co-Founder &amp; CMO</p>
+              <p class="leader__bio">Justin is a seasoned full-stack digital marketer with 18 years of experience at top Caribbean agencies and international brands, such as Lonsdale Saatchi and Scotiabank, where he served as the Regional Digital Marketing Manager. Residing in Barbados, he oversees daily strategies that effectively generate leads and establish authority.</p>
+            </div>
+          </article>
+
+          <article class="leader reveal">
+            <div class="leader__photo-wrap">
+              <img src="assets/team/dexter-banfield.jpg" alt="Dexter Banfield" loading="lazy">
+            </div>
+            <div class="leader__body">
+              <h3 class="leader__name">Dexter Banfield</h3>
+              <p class="leader__role">Chief Technology Officer</p>
+              <p class="leader__bio">Dexter is a web developer with over 20 years of experience. He has worked with leading international brands and Caribbean agencies, including Toyota and Lonsdale Saatchi &amp; Saatchi. Skilled in HTML, CSS, JavaScript, and PHP, he brings a passion for learning, a solution-driven mindset, and adaptability to every project.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section--dark testimonials" id="testimonials">
+      <div class="testimonials__quote-mark" aria-hidden="true">"</div>
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow">Testimonials</span>
+          <h2 class="section__title section__title--light">What clients say about working with us</h2>
+        </header>
+
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-track">
+            <article class="testimonial">
+              <p class="testimonial__quote">I would highly recommend David to anyone seeking web services, as he and his team understood our needs and worked tirelessly for solutions. This included assistance with our website rebrand and other critical initiatives for our university.</p>
+              <div class="testimonial__person">
+                <div class="avatar" aria-hidden="true">RR</div>
+                <div>
+                  <div class="testimonial__name">Roland Reese</div>
+                  <div class="testimonial__role">Marketing &amp; Communications Director, Sofia University</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <p class="testimonial__quote">David listens to stakeholders; thinks well about the product, priorities, and user experience; and he stays in close touch with his developers to close the gap between client expectations and what is delivered. What impressed our team the most was David's affable and reassuring manner; we enjoyed working with him on our app.</p>
+              <div class="testimonial__person">
+                <div class="avatar" aria-hidden="true">CM</div>
+                <div>
+                  <div class="testimonial__name">Cindy McPherson</div>
+                  <div class="testimonial__role">Business Systems Manager, Collaborative Classroom</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <p class="testimonial__quote">David has a rare blend of technical acumen and visionary leadership that has been pivotal in iConnected's development. He has successfully harnessed the power of social messaging platforms, integrating them with a responsive learning bot that guides users through a rich learning experience.</p>
+              <div class="testimonial__person">
+                <div class="avatar" aria-hidden="true">AM</div>
+                <div>
+                  <div class="testimonial__name">Alejandro Mayoral Banos, PhD</div>
+                  <div class="testimonial__role">Executive Director, Indigenous Friends Association</div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" data-dir="prev" aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div class="carousel-dots" id="testimonialDots"></div>
+            <button class="carousel-btn" data-dir="next" aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="section section--light" id="partners">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <span class="eyebrow eyebrow--dark">Our Partners</span>
+          <h2 class="section__title">We collaborate with leading technology providers</h2>
+          <p class="section__lede">From CRM platforms to cloud infrastructure, we work with best-in-class tools to deliver exceptional solutions.</p>
+        </header>
+      </div>
+      <div class="marquee marquee--light marquee--reverse reveal" aria-label="Technology partners">
+        <div class="marquee__track">
+          <img src="assets/partners/badge_capsule_partner.png" alt="Capsule Solution Partner">
+          <img src="assets/partners/logo_Shopify Partner.png" alt="Shopify Partner">
+          <img src="assets/partners/badge_SocialBee Partner.png" alt="SocialBee Partner">
+          <img src="assets/partners/logo_Pagecloud.png" alt="Pagecloud">
+          <img src="assets/partners/logo_MainCross.png" alt="MainCross">
+          <img src="assets/partners/logo_Strategy Tools.png" alt="Strategy Tools">
+          <img src="assets/partners/logo_WiseStamp.png" alt="WiseStamp">
+          <img src="assets/partners/logo_krispcall.png" alt="KrispCall">
+          <!-- duplicate for seamless loop -->
+          <img src="assets/partners/badge_capsule_partner.png" alt="" aria-hidden="true">
+          <img src="assets/partners/logo_Shopify Partner.png" alt="" aria-hidden="true">
+          <img src="assets/partners/badge_SocialBee Partner.png" alt="" aria-hidden="true">
+          <img src="assets/partners/logo_Pagecloud.png" alt="" aria-hidden="true">
+          <img src="assets/partners/logo_MainCross.png" alt="" aria-hidden="true">
+          <img src="assets/partners/logo_Strategy Tools.png" alt="" aria-hidden="true">
+          <img src="assets/partners/logo_WiseStamp.png" alt="" aria-hidden="true">
+          <img src="assets/partners/logo_krispcall.png" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA STRIP ============ -->
+    <section class="section cta-strip" id="cta">
+      <div class="cta-strip__glow" id="ctaGlow" aria-hidden="true"></div>
+      <div class="container cta-strip__inner reveal">
+        <span class="eyebrow">Ready when you are</span>
+        <h2 class="cta-strip__title">Let's Build Your<br>Digital Advantage.</h2>
+        <p class="cta-strip__sub">Ready to take the next step? Book a free consultation or send us a message to explore how we can help your business grow.</p>
+        <div class="cta-strip__actions">
+          <a href="https://calendar.app.google/gA78eskNmeD4hZSR8" target="_blank" rel="noopener" class="btn btn--primary">Schedule a Call</a>
+          <a href="#what-we-do" class="btn btn--ghost">Explore Services</a>
+        </div>
+        <div class="cta-strip__contact">
+          <a href="mailto:hello@pronovean.com">hello@pronovean.com</a>
+          <span class="dot-sep" aria-hidden="true">•</span>
+          <a href="tel:+16479526401">+1 647 952 6401</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT + NEWSLETTER ============ -->
+    <section class="section section--light" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-form-wrap reveal">
+          <header class="section__head">
+            <span class="eyebrow eyebrow--dark">Get in Touch</span>
+            <h2 class="section__title">Tell us about your project.</h2>
+            <p class="section__lede">Fill out the form below, and we'll get back to you as soon as possible.</p>
+          </header>
+
+          <!-- Capsule CRM integration: wire `action` and `name` attributes when ready. -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <input type="text" id="cf-name" name="name" required placeholder=" ">
+              <label for="cf-name">Name</label>
+            </div>
+            <div class="field">
+              <input type="email" id="cf-email" name="email" required placeholder=" ">
+              <label for="cf-email">Email</label>
+            </div>
+            <div class="field">
+              <input type="text" id="cf-company" name="company" placeholder=" ">
+              <label for="cf-company">Company (optional)</label>
+            </div>
+            <div class="field">
+              <select id="cf-topic" name="topic" required>
+                <option value="" disabled selected>What can we help you with?</option>
+                <option>Digital strategy &amp; roadmap</option>
+                <option>Website &amp; app development</option>
+                <option>CRM implementation</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <textarea id="cf-message" name="message" rows="4" required placeholder=" "></textarea>
+              <label for="cf-message">Message</label>
+            </div>
+            <button type="submit" class="btn btn--primary contact-form__submit">Send Message</button>
+            <p class="contact-form__success" id="contactSuccess" hidden>
+              Thanks — we'll be in touch shortly.
+            </p>
+          </form>
+        </div>
+
+        <aside class="contact-side reveal">
+          <div class="contact-side__card">
+            <h3>Talk to us directly</h3>
+            <p>Prefer email or a quick call? Reach us at:</p>
+            <ul class="contact-side__list">
+              <li><strong>Email</strong><a href="mailto:hello@pronovean.com">hello@pronovean.com</a></li>
+              <li><strong>Phone</strong><a href="tel:+16479526401">+1 647 952 6401</a></li>
+            </ul>
+            <a href="https://calendar.app.google/gA78eskNmeD4hZSR8" target="_blank" rel="noopener" class="btn btn--primary contact-side__cta">Book a Call</a>
+          </div>
+
+          <div class="contact-side__hours">
+            <h4>Response time</h4>
+            <p>We typically reply within one business day. For urgent enquiries, please call us directly.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <img src="assets/logo-white.png" alt="Pronovean" width="180">
+        <p>Your trusted partner for sustainable growth in a complex digital landscape.</p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/pronovean/" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.7a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zM20 19h-3v-5.6c0-1.4-.5-2.3-1.7-2.3a1.8 1.8 0 0 0-1.7 1.2c-.1.2-.1.5-.1.8V19h-3V8h3v1.3a3 3 0 0 1 2.7-1.5c2 0 3.5 1.3 3.5 4.1V19z"/></svg>
+          </a>
+          <a href="https://x.com/pronovean_inc" aria-label="X" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.836l-5.36-7.012L4.5 22H1.244l8.024-9.17L1 2h6.91l4.842 6.404L18.244 2zm-2.4 18h1.83L7.243 4H5.295l10.55 16z"/></svg>
+          </a>
+        </div>
+
+        <div class="footer__certs" aria-label="Certifications">
+          <a href="https://digitalreference.io/" target="_blank" rel="noopener" aria-label="Digital Reference 2026">
+            <img src="assets/badges/digital-reference-2026.png" alt="Digital Reference 2026">
+          </a>
+          <a href="https://digitalreference.io/" target="_blank" rel="noopener" aria-label="Verified Agency">
+            <img src="assets/badges/verified-agency-v1.png" alt="Verified Agency">
+          </a>
+          <a href="https://digitalreference.io/" target="_blank" rel="noopener" aria-label="Verified Agency">
+            <img src="assets/badges/verified-agency-v2.png" alt="Verified Agency">
+          </a>
+          <a href="https://digitalreference.io/" target="_blank" rel="noopener" aria-label="Verified Agency">
+            <img src="assets/badges/verified-agency-v3.png" alt="Verified Agency">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#what-we-do">What We Do</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#leaders">Our Leaders</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Locations</h4>
+        <ul>
+          <li>Orangeville, ON, Canada</li>
+          <li>Christ Church, Barbados</li>
+          <li>Port of Spain, Trinidad &amp; Tobago</li>
+        </ul>
+      </div>
+
+      <!-- Capsule + Transpond newsletter integration: wire endpoint when ready. -->
+      <div class="footer__col footer__col--newsletter">
+        <h4>Stay in the loop</h4>
+        <p>Insights on digital transformation, martech, and product strategy. One email a month. No spam.</p>
+        <form class="newsletter__form newsletter__form--footer" id="newsletterForm" novalidate>
+          <input type="email" name="email" required placeholder="you@company.com" aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+        <p class="newsletter__success" id="newsletterSuccess" hidden>You're in. Welcome aboard.</p>
+        <ul class="footer__contact-mini">
+          <li><a href="mailto:hello@pronovean.com">hello@pronovean.com</a></li>
+          <li><a href="tel:+16479526401">+1 647 952 6401</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <small>© 2026 Pronovean Inc. All rights reserved.</small>
+        <small class="footer__legal"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

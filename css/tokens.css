@@ -1,0 +1,55 @@
+:root {
+  /* Brand colors */
+  --berkeley:    #002d62;
+  --berkeley-2:  #001f47;
+  --berkeley-3:  #06376f;
+  --berkeley-4:  #0a4185;
+  --azure:       #4e81fa;
+  --azure-soft:  #6a96ff;
+  --azure-glow:  rgba(78, 129, 250, .35);
+  --teal:        #247B7B;
+  --teal-soft:   #2f9c9c;
+  --almond:      #F2E2D2;
+  --almond-soft: #faf1e6;
+  --platinum:    #E0E0E0;
+  --ash:         #BCC1BA;
+  --dim:         #666666;
+  --ink:         #0a1530;
+  --ink-soft:    #4a5670;
+  --white:       #ffffff;
+
+  /* Typography */
+  --font-display: "Bebas Neue", "Bebas Kai", Impact, sans-serif;
+  --font-body:    "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Fluid type scale */
+  --fs-display:  clamp(2.75rem, 6vw + 1rem, 6.5rem);
+  --fs-h1:       clamp(2.25rem, 4vw + 1rem, 4.5rem);
+  --fs-h2:       clamp(1.75rem, 2.5vw + 1rem, 3.25rem);
+  --fs-h3:       clamp(1.25rem, 1vw + 1rem, 1.75rem);
+  --fs-body:     clamp(1rem, 0.25vw + 0.95rem, 1.125rem);
+  --fs-small:    0.875rem;
+  --fs-eyebrow:  0.8125rem;
+
+  /* Spacing & layout */
+  --space-section: clamp(4.5rem, 8vw, 8.5rem);
+  --container:     min(1200px, 92vw);
+  --container-wide: min(1400px, 94vw);
+  --radius:        14px;
+  --radius-lg:     22px;
+  --radius-pill:   999px;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(0, 45, 98, 0.06);
+  --shadow-md:  0 10px 30px -10px rgba(0, 45, 98, 0.18);
+  --shadow-lg:  0 30px 60px -25px rgba(0, 45, 98, 0.25);
+  --shadow-azure: 0 18px 40px -16px rgba(78, 129, 250, 0.55);
+
+  /* Motion */
+  --ease-out:    cubic-bezier(.2,.7,.2,1);
+  --ease-in-out: cubic-bezier(.65,0,.35,1);
+  --ease-spring: cubic-bezier(.2, 1.2, .3, 1);
+  --dur-fast:   180ms;
+  --dur-base:   320ms;
+  --dur-slow:   600ms;
+}
