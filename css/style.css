@@ -361,6 +361,55 @@ body {
   flex-wrap: wrap;
 }
 
+/* Capsule Certified Partner badge — only shown on hero panel 3 */
+.capsule-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  padding: .65rem 1.1rem .65rem .75rem;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  transition: transform var(--dur-base) var(--ease-out),
+              background var(--dur-base) var(--ease-out),
+              border-color var(--dur-base) var(--ease-out);
+}
+.capsule-badge:hover {
+  transform: translateY(-2px);
+  background: rgba(255,255,255,.07);
+  border-color: rgba(78,129,250,.4);
+}
+.capsule-badge img {
+  height: 48px;
+  width: auto;
+  display: block;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 4px;
+}
+.capsule-badge__text {
+  display: grid;
+  gap: .15rem;
+  line-height: 1.2;
+}
+.capsule-badge__text small {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--azure-soft);
+}
+.capsule-badge__text > span {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,.9);
+  display: inline-flex;
+  align-items: center;
+  gap: .35em;
+}
+.capsule-badge__text > span span { transition: transform var(--dur-base) var(--ease-out); }
+.capsule-badge:hover .capsule-badge__text > span span { transform: translateX(3px); }
+
 /* Hero visuals */
 .hero__visual {
   position: relative;
@@ -985,6 +1034,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--white);
 }
+.credibility__disclaimer {
+  margin-top: 2.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,.45);
+  max-width: 680px;
+  margin-inline: auto;
+  font-style: italic;
+}
 
 .marquee {
   width: 100%;
@@ -997,21 +1056,38 @@ body {
 .marquee__track {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 5.5rem;
   width: max-content;
   animation: marquee 50s linear infinite;
 }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee--reverse .marquee__track { animation-direction: reverse; }
 .marquee__track img {
-  height: 42px;
+  height: 160px;
   width: auto;
   flex-shrink: 0;
-  opacity: .65;
-  transition: opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out);
+  object-fit: contain;
+  transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-base) var(--ease-out);
 }
+/* Normalize every brand mark to a uniform light-grey silhouette so dark
+   logos don't disappear into the navy background. */
 .marquee--dark .marquee__track img {
   filter: brightness(0) invert(1);
+  opacity: .75;
+}
+.marquee--dark .marquee__track img:hover {
+  transform: scale(1.04);
+  opacity: 1;
+}
+/* Stacked logos (symbol-over-text lock-ups) look taller than horizontal ones —
+   scale them down so the marquee reads as a uniform row. */
+.marquee--dark .marquee__track img[src*="toyota"],
+.marquee--dark .marquee__track img[src*="hyundai"],
+.marquee--dark .marquee__track img[src*="gatorade"],
+.marquee--dark .marquee__track img[src*="scotiabank"],
+.marquee--dark .marquee__track img[src*="digicel"],
+.marquee--dark .marquee__track img[src*="air-canada"] {
+  height: 110px;
 }
 /* Light marquee — partner wall: uniform-height cells so square badges and
    horizontal logos feel evenly weighted */
@@ -1635,7 +1711,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: .75rem;
+  gap: 1.25rem 1.5rem;
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,.08);
@@ -1645,21 +1721,21 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: .35rem;
-  border-radius: 10px;
-  background: rgba(255,255,255,.04);
-  border: 1px solid rgba(255,255,255,.08);
-  transition: transform var(--dur-base) var(--ease-out), background var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
+  transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-base) var(--ease-out);
+  opacity: .85;
 }
 .footer__certs a:hover {
   transform: translateY(-2px);
-  background: rgba(255,255,255,.08);
-  border-color: rgba(78,129,250,.3);
+  opacity: 1;
 }
 .footer__certs img {
   height: 52px;
   width: auto;
   display: block;
+}
+/* Featured cert (Capsule) — slightly smaller because it's a wide horizontal lock-up */
+.footer__certs--featured img {
+  height: 38px;
 }
 
 .footer__col--newsletter h4 { margin-bottom: .85rem; }
@@ -1907,10 +1983,10 @@ body {
   .section__title { font-size: clamp(1.65rem, 7vw, 2.4rem); }
   .card { padding: 1.85rem 1.4rem; }
 
-  .marquee__track { gap: 2.5rem; animation-duration: 40s; }
-  .marquee__track img { height: 32px; }
+  .marquee__track { gap: 3rem; animation-duration: 40s; }
+  .marquee__track img { height: 110px; }
   .marquee--light .marquee__track { gap: 2.25rem; }
-  .marquee--light .marquee__track img { max-height: 52px; max-width: 130px; }
+  .marquee--light .marquee__track img { height: auto; max-height: 52px; max-width: 130px; }
 
   .stats { padding: 1.75rem; }
   .stat__num { font-size: clamp(2.5rem, 13vw, 3.25rem); }
