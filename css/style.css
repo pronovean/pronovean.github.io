@@ -1729,13 +1729,13 @@ body {
   opacity: 1;
 }
 .footer__certs img {
-  height: 48px;
+  height: 46px;
   width: auto;
   display: block;
 }
 /* Featured cert (Capsule) — slightly smaller because it's a wide horizontal lock-up */
 .footer__certs--featured img {
-  height: 42px;
+  height: 46px;
 }
 
 .footer__col--newsletter h4 { margin-bottom: .85rem; }
