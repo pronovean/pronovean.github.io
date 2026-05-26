@@ -90,7 +90,7 @@
   // Set initial state on all hero panel content
   const heroPanels = gsap.utils.toArray('.hero__panel');
   heroPanels.forEach((panel, i) => {
-    const items = panel.querySelectorAll('.eyebrow, .hero__title, .hero__sub, .hero__ctas, .hero__visual');
+    const items = panel.querySelectorAll('.eyebrow, .hero__title, .hero__sub, .hero__ctas, .capsule-badge, .hero__visual');
     // First panel: animate immediately on load
     if (i === 0) {
       gsap.from(items, {
@@ -111,7 +111,7 @@
   const heroPanelObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-        const items = entry.target.querySelectorAll('.eyebrow, .hero__title, .hero__sub, .hero__ctas, .hero__visual');
+        const items = entry.target.querySelectorAll('.eyebrow, .hero__title, .hero__sub, .hero__ctas, .capsule-badge, .hero__visual');
         // Skip first panel (already animated)
         if (entry.target === heroPanels[0]) return;
         if (entry.target.dataset.revealed) return;
