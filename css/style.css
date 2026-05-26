@@ -1735,7 +1735,7 @@ body {
 }
 /* Featured cert (Capsule) — slightly smaller because it's a wide horizontal lock-up */
 .footer__certs--featured img {
-  height: 38px;
+  height: 40px;
 }
 
 .footer__col--newsletter h4 { margin-bottom: .85rem; }
